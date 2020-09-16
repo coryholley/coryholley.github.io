@@ -11,14 +11,9 @@ $(document).ready(function () {
 });
 
 // Scrolling Effect
+        $(document).scroll(function() {
+            var $nav = $("#mainNavbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
 
-$(window).on("scroll", function () {
-    if ($(window).scrollTop()) {
-        $('nav').addClass('black');
-    } else {
-        $('nav').removeClass('black');
-    }
-
-
-})
 

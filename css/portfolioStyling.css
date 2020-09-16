@@ -1,93 +1,37 @@
-/*NAVBAR CSS*/
-.logo {
-    line-height: 60px;
-    position: fixed;
-    float: left;
-    margin: 16px 46px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
+#mainNavbar {
+    padding-left: 50px;
+    padding-top: 20px
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    line-height: 60px;
+.navbar-dark .navbar-brand {
+    font-family: 'Source Serif Pro', serif
 }
 
-nav ul {
-    line-height: 60px;
-    list-style: none;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    padding-right: 40px;
-    transition: 1s;
+.navbar-nav .nav-link {
+    font-family: 'Source Serif Pro', serif
 }
 
-nav.black ul {
-    background: #000;
+.display-4 {
+    font-family: 'Source Serif Pro', serif
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 16px 40px;;
+.lead {
+    font-family: 'Source Serif Pro', serif
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+.scrolled {
+    background: rgb(34, 31, 31);
+    transition: background 500ms
 }
 
-.menu-icon {
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
+.font-weight-light {
+    font-family: 'Source Serif Pro', serif
 }
 
-@media(max-width: 786px) {
-
-    .logo {
-        position: fixed;
-        top: 0;
-        margin-top: 16px;
-    }
-
-    nav ul {
-        max-height: 0px;
-        background: #000;
-    }
-
-    nav.black ul {
-        background: #000;
-    }
-
-    .showing {
-        max-height: 34em;
-    }
-
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px;
-        text-align: center;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
+#thumbnailNav {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 /*ENDNAV*/
@@ -151,6 +95,94 @@ header .overlay {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    background-color: #241958;
 }
+
+
+
+/*---------------BUTTON TABS-------------------*/
+
+.topButtons {
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    color: #2d334a;
+    font-size: 23px;
+    padding: 0;
+}
+
+.topButtons:hover {
+    font-weight: bold;
+}
+
+.btnLink {
+    border: 0 !important;
+}
+
+#myTab {
+    border: none;
+}
+
+/*---------------COFFEE TAB-------------------*/
+
+select {
+    width: 200px;
+    padding: 5px;
+    border-radius:10px;
+}
+
+input[type=submit] {
+    color: white;
+    padding:5px 10px;
+    background: #2d334a;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text] {
+    padding:8px;
+    border:0;
+    box-shadow: 3px 4px 8px #2d334a;
+    border-radius:10px;
+}
+
+.coffee {
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -webkit-box-shadow: 10px 10px 5px #2d334a;
+    box-shadow: 3px 4px 8px #2d334a;
+}
+
+#coffeeBagPic {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 150px;
+    width: 100px;
+}
+
+.coffee:hover {
+    -webkit-transform: scale(1.1);
+}
+
+/*---------------LOCATIONS TAB-------------------*/
+
+#map {
+    width: 50%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*---------------CONTACT US TAB-------------------*/
+
+.contactSubmit {
+    background-color: #2d334a;
+    color: white;
+}
+
 
 
