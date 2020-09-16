@@ -1,75 +1,24 @@
-var $el = $("#very-specific-design");
-var elHeight = $el.outerHeight();
-var elWidth = $el.outerWidth();
+$(document).ready(function () {
+    $("#headerContent").hide()
 
-var $wrapper = $("#scaleable-wrapper");
+    $(window).load(function () {
+        $("#headerContent").delay(1000).fadeIn(2000)
+    })
 
-$wrapper.resizable({
-    resize: doResize
+    $(".menu-icon").on("click", function () {
+        $("nav ul").toggleClass("showing");
+    });
 });
 
-function doResize(event, ui) {
+// Scrolling Effect
 
-    var scale, origin;
-
-    scale = Math.min(
-        ui.size.width / elWidth,
-        ui.size.height / elHeight
-    );
-
-    $el.css({
-
-        transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
-    });
-
-}
-
-var starterData = {
-    size: {
-        width: $wrapper.width(),
-        height: $wrapper.height()
+$(window).on("scroll", function () {
+    if ($(window).scrollTop()) {
+        $('nav').addClass('black');
+    } else {
+        $('nav').removeClass('black');
     }
-}
-doResize(null, starterData);
 
-
-// (function( $ ) {
-//     $.fn.keepRatio = function(which) {
-//         var $this = $(this);
-//         var w = $this.width();
-//         var h = $this.height();
-//         var ratio = w/h;
-//         $(window).resize(function() {
-//             switch(which) {
-//                 case 'width':
-//                     var nh = $this.width() / ratio;
-//                     $this.css('height', nh + 'px');
-//                     break;
-//                 case 'height':
-//                     var nw = $this.height() * ratio;
-//                     $this.css('width', nw + 'px');
-//                     break;
-//             }
-//         });
-//
-//     }
-// })( jQuery );
-//
-// $(document).ready(function(){
-//     $('#very-specific-design').keepRatio('width');
-// });
-
-$(window).resize(function () {
-    var $this = $("#very-specific-design");
-    var w = $this.width();
-    var h = $this.height();
-    var ratio = w / h;
-
-    var nh = $this.width() / ratio;
-    $this.css('height', nh + 'px');
-
-    var nw = $this.height() * ratio;
-    $this.css('width', nw + 'px');
 
 })
 
