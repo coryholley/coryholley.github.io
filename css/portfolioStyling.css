@@ -91,19 +91,11 @@ header .overlay {
     }
 }
 
-.infoButtons {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #241958;
-}
-
-
 
 /*---------------BUTTON TABS-------------------*/
 
 .topButtons {
-    border-radius: 50%;
+    border-radius: 40%;
     width: 135px;
     height: 135px;
     color: #2d334a;
@@ -111,78 +103,8 @@ header .overlay {
     padding: 0;
 }
 
-.topButtons:hover {
-    font-weight: bold;
-}
 
-.btnLink {
-    border: 0 !important;
-}
 
-#myTab {
-    border: none;
-}
-
-/*---------------COFFEE TAB-------------------*/
-
-select {
-    width: 200px;
-    padding: 5px;
-    border-radius:10px;
-}
-
-input[type=submit] {
-    color: white;
-    padding:5px 10px;
-    background: #2d334a;
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-input[type=text] {
-    padding:8px;
-    border:0;
-    box-shadow: 3px 4px 8px #2d334a;
-    border-radius:10px;
-}
-
-.coffee {
-    width: 250px;
-    height: 250px;
-    border-radius: 25%;
-    -webkit-transition: all 0.5s ease-in-out;
-    -webkit-box-shadow: 10px 10px 5px #2d334a;
-    box-shadow: 3px 4px 8px #2d334a;
-}
-
-#coffeeBagPic {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 150px;
-    width: 100px;
-}
-
-.coffee:hover {
-    -webkit-transform: scale(1.1);
-}
-
-/*---------------LOCATIONS TAB-------------------*/
-
-#map {
-    width: 50%;
-    height: 600px;
-    margin: 0 auto;
-}
-
-/*---------------CONTACT US TAB-------------------*/
-
-.contactSubmit {
-    background-color: #2d334a;
-    color: white;
-}
 
 
 

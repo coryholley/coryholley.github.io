@@ -16,6 +16,7 @@
 <body class="m-0 p-0">
 
 <header>
+
     <!-------NABAR------>
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top"> <a href="#" class="navbar-brand"><img id="thumbnailNav" src="img/thumbnailPic.jpeg"></a> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navLinks">
@@ -35,7 +36,7 @@
         <div class="d-flex h-100 text-right align-items-center">
             <div id="headerContent" class="w-100">
                 <h1 class="display-3 pl-4">CORY HOLLEY</h1>
-                <p class="lead mb-0">Web developer</p>
+                <p class="lead mb-0">Web Developer</p>
             </div>
         </div>
     </div>
@@ -43,68 +44,102 @@
 
 
 <!---------------TOP TABS---------------->
-<section class="my-5 p-2">
-    <div class="container">
-        <div class="row m-o">
-            <div class="col-md-12 d-flex justify-content-center">
-                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                    <!------------FIRST PROJECTS TAB------------>
-                    <li class="nav-item">
-                        <a class="btnLink nav-link active" data-toggle="tab" href="#projectsTab"
-                           role="tab" aria-controls="coffeesList" aria-selected="true">
-                            <button type="button" class="btn topButtons"><img class='topButtons'
-                                                                              alt='coffeebeans' src="img/projectsTab.jpg">
-                                <p class="mt-2">
-                                    Projects
-                                </p>
-                            </button>
-                        </a>
-                    </li>
-                    <!------------SECOND LOCATIONS TAB------------>
-                    <li class="nav-item">
-                        <a class="btnLink nav-link" id="locations-tab" data-toggle="tab" href="#locationsTab" role="tab"
-                           aria-controls="locationsTab" aria-selected="false">
-                            <button type="button" class="btn topButtons"><img class='topButtons'
-                                                                              alt='coffeebeans' src="img/resumeTab.jpg">
-                                <p class="mt-2">Resume</p>
-                            </button>
-                        </a>
-                    </li>
-                    <!-------------THIRD CONTACT TAB------------->
-                    <li class="nav-item">
-                        <a class="btnLink nav-link" id="contactUs-tab" data-toggle="tab" href="#contactTab" role="tab"
-                           aria-controls="contactTab" aria-selected="false">
-                            <button type="button" class="btn topButtons"><img class='topButtons'
-                                                                              alt='coffeebeans' src="img/findmeTab.jpg">
-                                <p class="mt-2">Find Me</p>
-                            </button>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<div class="row pt-5 pl-3">
+    <div class="col-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active btnLink bg-white" id="v-pills-home-tab" data-toggle="pill" href="#aboutMeTab" role="tab" aria-controls="v-pills-home" aria-selected="true"><img class='topButtons' alt='coffeebeans' src="img/aboutMeTab.jpg"><p class="mt-2 ml-3 text-dark h4">About Me</p></a>
+
+            <a class="nav-link bg-white" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><img class='topButtons' alt='coffeebeans' src="img/projectsTab.jpg"><p class="mt-2 ml-4 text-dark h4">Projects</p></a>
+
+            <a class="nav-link bg-white" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><img class='topButtons' alt='coffeebeans' src="img/followmeTabPin.jpg"><p class="mt-2 ml-3 text-dark h4">Follow Me</p></a>
+
+            <a class="nav-link bg-white" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><img class='topButtons' alt='coffeebeans' src="img/contactMeTab.jpg"><p class="mt-2 ml-2 text-dark h4">Contact Me</p></a>
         </div>
     </div>
-</section>
-<!-----------------END OF TABS------------------>
-
-<div class="tab-content p-0 mb-5" id="myTabContent">
-    <!-----------------CONTENTS OF OUR COFFEE TAB------------------>
-    <div class="container-fluid tab-pane fade row w-100 m-0 show active" id="projectsTab" role="tabpanel"
-         aria-labelledby="coffeeListTab"> PROJECTS
-    </div>
-
-    <!-----------------LOCATIONS TAB CONTENT------------------>
-    <div class="tab-pane fade" role="tabpanel" aria-labelledby="locationsTab" id="locationsTab">
-
-    </div>
-
-    <!-----------------CONTACT US TAB CONTENT------------------>
-    <div class="tab-pane fade" role="tabpanel" aria-labelledby="contactTab" id="contactTab">
-        <div class="container py-3 w-50">
-
+    <div class="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="aboutMeTab" role="tabpanel" aria-labelledby="v-pills-home-tab">About Me</div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Project</div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Follow Me</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Contact Me</div>
         </div>
     </div>
 </div>
+
+<!--<section class="my-5 p-2">-->
+<!--    <div class="container">-->
+<!--        <div class="row m-o">-->
+<!--            <div class="col-md-12 d-flex">-->
+<!--                <ul class="nav nav-tabs flex-column justify-content-center" id="myTab" role="tablist">-->
+<!--                    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;ABOUT ME TAB&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="btnLink nav-link active" data-toggle="tab" href="#projectsTab"-->
+<!--                           role="tab" aria-controls="coffeesList" aria-selected="true">-->
+<!--                            <button type="button" class="btn topButtons"><img class='topButtons'-->
+<!--                                                                              alt='coffeebeans' src="img/projectsTab.jpg">-->
+<!--                                <p class="mt-2">-->
+<!--                                    About Me-->
+<!--                                </p>-->
+<!--                            </button>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;PROJECTS TAB&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="btnLink nav-link active" data-toggle="tab" href="#projectsTab"-->
+<!--                           role="tab" aria-controls="coffeesList" aria-selected="true">-->
+<!--                            <button type="button" class="btn topButtons"><img class='topButtons'-->
+<!--                                                                              alt='coffeebeans' src="img/projectsTab.jpg">-->
+<!--                                <p class="mt-2">-->
+<!--                                    Projects-->
+<!--                                </p>-->
+<!--                            </button>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;SECOND LOCATIONS TAB&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="btnLink nav-link" id="locations-tab" data-toggle="tab" href="#locationsTab" role="tab"-->
+<!--                           aria-controls="locationsTab" aria-selected="false">-->
+<!--                            <button type="button" class="btn topButtons"><img class='topButtons'-->
+<!--                                                                              alt='coffeebeans' src="img/resumeTab.jpg">-->
+<!--                                <p class="mt-2">Resume</p>-->
+<!--                            </button>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    &lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;THIRD CONTACT TAB-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="btnLink nav-link" id="contactUs-tab" data-toggle="tab" href="#contactTab" role="tab"-->
+<!--                           aria-controls="contactTab" aria-selected="false">-->
+<!--                            <button type="button" class="btn topButtons"><img class='topButtons'-->
+<!--                                                                              alt='coffeebeans' src="img/findmeTab.jpg">-->
+<!--                                <p class="mt-2">Find Me</p>-->
+<!--                            </button>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!-----------------END OF TABS------------------>
+
+<!--<div class="tab-content p-0 mb-5" id="myTabContent">-->
+<!--    &lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;CONTENTS OF OUR COFFEE TAB&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--    <div class="container-fluid tab-pane fade row w-100 m-0 show active" id="projectsTab" role="tabpanel"-->
+<!--         aria-labelledby="coffeeListTab"> PROJECTS-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;LOCATIONS TAB CONTENT&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--    <div class="tab-pane fade" role="tabpanel" aria-labelledby="locationsTab" id="locationsTab">-->
+
+<!--    </div>-->
+
+<!--    &lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;CONTACT US TAB CONTENT&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--    <div class="tab-pane fade" role="tabpanel" aria-labelledby="contactTab" id="contactTab">-->
+<!--        <div class="container py-3 w-50">-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 
