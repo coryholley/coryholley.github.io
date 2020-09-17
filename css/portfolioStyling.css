@@ -128,6 +128,17 @@ header .overlay {
     border-radius: 3%;
 }
 
+.card {
+    -webkit-box-shadow: 4px 4px 70px -10px rgba(47,21,117,1);
+    -moz-box-shadow: 4px 4px 70px -10px rgba(47,21,117,1);
+    box-shadow: 4px 4px 70px -10px rgba(47,21,117,1);
+}
+
+.card-title, ul{
+    list-style-type: none;
+    text-align: center;
+}
+
 
 
 
