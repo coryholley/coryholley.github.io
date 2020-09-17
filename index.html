@@ -50,7 +50,7 @@
 
 <!---------------TOP TABS---------------->
 <div class="row pt-5 pl-3">
-    <div class="col-3">
+    <div class="col-md-3 col-12">
         <div class="nav flex-column nav-pills align-content-center" id="v-pills-tab" role="tablist"
              aria-orientation="vertical">
             <a class="nav-link active btnLink bg-white" id="v-aboutMeTab" data-toggle="pill" href="#aboutMeTab"
@@ -76,7 +76,7 @@
                 <p class="mt-2 ml-2 text-dark h4">Contact Me</p></a>
         </div>
     </div>
-    <div class="col-9">
+    <div class="col-9 d-none d-md-block">
         <div class="tab-content" id="v-pills-tabContent">
             <div class="tab-pane fade show active" id="aboutMeTab" role="tabpanel" aria-labelledby="v-pills-home-tab">
                 <div>
@@ -87,11 +87,12 @@
             </div>
 
             <div class="tab-pane fade" id="projectTab" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                <div id="projectContent mx-auto">
+                <div id="projectContent mx-auto pb-4">
                     <div class="display-1 mb-5" id="projectContentHeader">
                         Some of my work...
                     </div>
-                    <div class="card mt-2 mx-auto my-auto" style="width: 50rem;">
+                    <div class="container-fluid pb-4">
+                    <div class="card mt-2 mx-auto">
 <!--CAROUSEL---->
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -121,18 +122,23 @@
                         </div>
 <!----END--->
 
-                        <div class="card-body mx-auto">
-                            <h5 class="card-title">Selected Work:</h5>
+                        <div class="card-body w-100">
+                            <h5 class="card-title mb-3">Selected Work:</h5>
                             <p class="card-text">
-                                <ul class="pl-0">
-                            <li>Weather Widget Site</li>
-                            <li>Tool Time Tool Shop Site</li>
-                            <li>The Split Bean Coffee Site</li>
-                        </ul>
+                            <div class="d-flex">
+                            <div class="h-100"><div class="colorGifDiv"><div class="btn btn-secondary"></div></div></div>
+                            <div><div class="colorGifDiv"><div class="btn btn-secondary"></div></div></div>
+                            <div><div class="colorGifDiv"><div class="btn btn-secondary"></div></div></div>
+                            </div>
+<!--                                <ul class="pl-0 d-flex justify-content-around">-->
+<!--                            <li><a class="btn btn-outline-secondary" href="#" role="button">Weather Widget Site</a></li>-->
+<!--                            <li><div id="colorSplashContainer" class="d-flex"><a class="btn btn-outline-secondary align-content-center" href="#" role="button">Tool Time Tool Shop Site</a></div></li>-->
+<!--                            <li><a class="btn btn-outline-secondary" href="#" role="button">The Split Bean Coffee Site</a></li>-->
+<!--                        </ul>-->
                             </p>
                         </div>
                     </div>
-
+                    </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">

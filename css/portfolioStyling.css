@@ -129,6 +129,7 @@ header .overlay {
 }
 
 .card {
+    max-width: 85%;
     -webkit-box-shadow: 4px 4px 70px -10px rgba(47,21,117,1);
     -moz-box-shadow: 4px 4px 70px -10px rgba(47,21,117,1);
     box-shadow: 4px 4px 70px -10px rgba(47,21,117,1);
@@ -137,6 +138,19 @@ header .overlay {
 .card-title, ul{
     list-style-type: none;
     text-align: center;
+}
+/*#colorSplashContainer {*/
+/*    height: 100px;*/
+/*    width: 400px;*/
+/*}*/
+
+/*btn-outline-secondary {*/
+/*    width: 30px;*/
+/*    height: 20px;*/
+/*}*/
+
+.colorGifDiv {
+    border: 1px solid black;
 }
 
 
