@@ -139,18 +139,29 @@ header .overlay {
     list-style-type: none;
     text-align: center;
 }
-/*#colorSplashContainer {*/
-/*    height: 100px;*/
-/*    width: 400px;*/
-/*}*/
 
-/*btn-outline-secondary {*/
-/*    width: 30px;*/
-/*    height: 20px;*/
-/*}*/
+.btn-outline-secondary {
+    text-decoration: none;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+}
 
 .colorGifDiv {
-    border: 1px solid black;
+    width: 265px;
+    height: 145px;
+}
+
+#projectDivForGIF {
+    height: 100px;
+}
+
+.gif {
+    background-image: url("../img/colorExplosion.gif");
+    background-size: cover;
+    width: 265px;
+    height: 125px;
+    border: none;
 }
 
 
