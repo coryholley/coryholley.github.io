@@ -1,3 +1,19 @@
+@font-face {
+    font-family: Bellandha;
+    src: url("../fonts/Bellandha.ttf");
+}
+
+@font-face {
+    font-family: Signature;
+    src: url("../fonts/SignatureDemo.ttf");
+}
+
+@font-face {
+    font-family: DanceSignature;
+    src: url("../fonts/The Dance Signature.ttf");
+}
+
+
 #mainNavbar {
     padding-left: 50px;
     padding-top: 20px
@@ -103,6 +119,14 @@ header .overlay {
     padding: 0;
 }
 
+
+#aboutMeContent, #projectContentHeader {
+    font-family: DanceSignature, sans-serif;
+}
+
+.card, .carousel-item > img{
+    border-radius: 3%;
+}
 
 
 
