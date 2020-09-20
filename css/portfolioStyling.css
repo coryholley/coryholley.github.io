@@ -132,7 +132,7 @@ header .overlay {
     max-width: 85%;
     -webkit-box-shadow: 4px 4px 70px -10px rgba(47,21,117,1);
     -moz-box-shadow: 4px 4px 70px -10px rgba(47,21,117,1);
-    box-shadow: 4px 4px 70px -10px rgba(47,21,117,1);
+    box-shadow: 4px 4px 70px -10px rgb(47, 21, 117);
 }
 
 .card-title {
@@ -144,25 +144,11 @@ header .overlay {
     justify-content: center;
     font-weight: bold;
     font-size: x-large;
-    color: #241958 !important;
+    color: #2F1575;
 }
 
-.colorGifDiv {
-    text-align: center;
-    width: 265px;
-    height: 150px;
-}
-
-#projectDivForGIF {
-    height: 100px;
-}
-
-.gif {
-    background-image: url("../img/colorExplosion.gif");
-    background-size: cover;
-    width: 265px;
-    height: 150px;
-    border: none;
+#projectDivForLinks {
+    height: 100%;
 }
 
 

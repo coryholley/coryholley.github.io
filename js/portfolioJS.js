@@ -18,16 +18,17 @@ $(document).scroll(function () {
 });
 
 
-
+var btnTextColor = ""
 var btnText = ""
 $(".btn-outline-secondary").on("mouseenter", function() {
     btnText = $(this).html()
-    $(this).addClass("gif")
+    btnTextColor = $(this).css("color")
     $(this).html("VISIT THE SITE")
+    $(this).css("color", "#d6079f")
 })
 $(".btn-outline-secondary").on("mouseleave", function() {
-    $(this).removeClass("gif")
     $(this).html(btnText)
+    $(this).css("color", btnTextColor)
 })
 
 
